@@ -13,7 +13,7 @@ test_file_list = os.listdir(test_data_path)
 
 train_data = [Image.open(os.path.join(train_data_path, filename)) for filename in train_file_list]
 test_data = [Image.open(os.path.join(test_data_path, filename)) for filename in test_file_list]
-
+# print(train_file_list)
 
 def main(flag: str, start: int = 0):
     
