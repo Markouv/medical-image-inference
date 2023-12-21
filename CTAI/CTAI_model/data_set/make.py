@@ -7,8 +7,8 @@ import torch
 from torch.utils import data
 from torch.utils.data import random_split
 
-train_data_path = '/Users/markov/Desktop/Energy and Power/medical image inference/data/train_data'
-test_data_path = '/Users/markov/Desktop/Energy and Power/medical image inference/data/test_data'
+train_data_path = '/Users/markov/Desktop/Energy and Power/medical image inference/data/train_data_label'
+test_data_path = '/Users/markov/Desktop/Energy and Power/medical image inference/data/test_data_label'
 
 
 def get_person_files(data_path):
@@ -175,4 +175,5 @@ def get_d1_local(path):
 if __name__ == '__main__':
     # get_train_files(train_data_path)
     # get_dataset(train_data_path,have=True)
-    bag = get_d1_local()
+    # bag = get_d1_local()
+    image_path = os.path.join(train_data_path, "")
